@@ -1,16 +1,55 @@
+button{
+  margin-top: 20px;
+  margin-left: 180px;
+  margin-bottom: 0;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.97);
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+}
+
+
 #container {
+  width: 960px;
+  height: 960px;
+  padding: 10px;
+  margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 20px;
-  width: 100%;
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d0e6f2;
 }
 
 .square {
-  flex: 1 0 100px; 
-  height: 100px;
-  background-color: blue;
-  border: 1px solid white;
-  box-sizing: border-box;
-  max-width: calc(25% - 5px);
+  background: #7fb3d5;
+  margin: 2px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.square:hover {
+  background: #5da4cc;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
